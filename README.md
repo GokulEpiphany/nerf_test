@@ -19,12 +19,9 @@ Install the dependent libraries as follows:
 
 * Install the dependent python libraries (recommend to use conda):
 ```
-conda create -n new python=3.8
-source activate new
-conda install -c pytorch pytorch=1.6.0 torchvision cudatoolkit=10.2
-conda install -c fvcore -c iopath -c conda-forge fvcore iopath
-conda install -c pytorch3d pytorch3d
-pip install matplotlib scikit-image lpips opencv-python inplace_abn open3d Pillow tqdm
+conda env create -f environment.yaml
+conda activate env-DSS
+
 ```
 
 * Then compile the dependent libraries:
